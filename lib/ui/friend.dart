@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../Models/user.dart';
 import 'home.dart';
 import '../Models/friendModel.dart';
-import 'myfriend.dart';
+
 import 'todos.dart';
 
 class FriendScreen extends StatefulWidget {
@@ -17,18 +17,6 @@ class FriendScreen extends StatefulWidget {
 class FriendScreenState extends State<FriendScreen> {
   FriendProvider friendProvider = FriendProvider();
   @override
-  // void initState() {
-  //   super.initState();
-  //   friendProvider
-  //       .loadData("https://jsonplaceholder.typicode.com/users")
-  //       .then((r) {
-  //     friends = r;
-  //     print(friends);
-  //     for (int i = 0; i < friends.length; i++) {
-  //       print("${friends[i].id} : ${friends[i].name}");
-  //     }
-  //   });
-  // }
 
   Widget listFriends(BuildContext context, AsyncSnapshot snapshot) {
     User myself = widget.user;

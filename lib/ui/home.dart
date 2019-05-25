@@ -15,7 +15,7 @@ class Home extends StatefulWidget {
 }
 
 String quote;
-String name = '';
+String hname = '';
 class _HomeState extends State<Home> {
   @override
   final _formKey = GlobalKey<FormState>();
@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
   void readLocal() async {
     quote = await QuoteText().readText();
     final prfer = await SharedPreferences.getInstance();
-    name = prfer.getString('name');
+    hname = prfer.getString('name');
     // Force refresh input
     setState(() {});
   }
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
                   ListTile(
                     // title: Text(name),
                     title: Text(
-                      'Hello ${name}',
+                      'Hello ${hname}',
                       style: new TextStyle(
                         fontSize: 20.0,
                       ),

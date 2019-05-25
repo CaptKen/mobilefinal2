@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../Models/user.dart';
 import 'friend.dart';
-import '../Models/friendModel.dart';
 import 'todos.dart';
-import '../Models/todoModel.dart';
+
 
 class FriendInfoScreen extends StatefulWidget {
   int id;

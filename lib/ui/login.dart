@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:toast/toast.dart';
 import 'register.dart';
 import 'home.dart';
 import '../Models/user.dart';
